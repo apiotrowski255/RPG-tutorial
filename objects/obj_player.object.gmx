@@ -31,6 +31,8 @@ spd = 2;                            //speed of the player
 hspd = 0;                           //horizontal speed
 vspd = 0;                           //vertical speed
 len = 0;                            //length
+x_axis = 0;
+y_axis = 0;
 image_speed = 0;                    //image speed for animating the player sprite
 scr_get_input();                    //get and set keyboard inputs
 state = scr_move_state;             //set player state to move_state

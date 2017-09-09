@@ -1,10 +1,6 @@
 ///scr_move_state
 scr_get_input();
 
-//get the axis
-var x_axis = (right_key - left_key);
-var y_axis = (down_key - up_key);
-
 //Get direction
 var dir = point_direction(0, 0 ,x_axis, y_axis);
 

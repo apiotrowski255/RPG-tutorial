@@ -1,8 +1,13 @@
 ///scr_move_state
 scr_get_input();
 
+if (dash_key){
+    state = scr_dash_state;
+    alarm[0] = room_speed/6;
+}
+
 //Get direction
-var dir = point_direction(0, 0 ,x_axis, y_axis);
+dir = point_direction(0, 0 ,x_axis, y_axis);
 
 //get the length
 if(x_axis == 0 and y_axis == 0){

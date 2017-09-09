@@ -33,9 +33,34 @@ vspd = 0;                           //vertical speed
 len = 0;                            //length
 x_axis = 0;
 y_axis = 0;
+dir = 0;
 image_speed = 0;                    //image speed for animating the player sprite
 scr_get_input();                    //get and set keyboard inputs
 state = scr_move_state;             //set player state to move_state
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///alarm to exit the dash state
+state = scr_move_state;
 </string>
           </argument>
         </arguments>

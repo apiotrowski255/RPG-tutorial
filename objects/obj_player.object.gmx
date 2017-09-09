@@ -26,11 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///set fixed rotation
-phy_fixed_rotation = true;
-spd = 2;
-image_speed = 0;
-scr_get_input();
-state = scr_move_state;
+phy_fixed_rotation = true;          //Stops the player from spinning
+spd = 2;                            //speed of the player 
+hspd = 0;                           //horizontal speed
+vspd = 0;                           //vertical speed
+len = 0;                            //length
+image_speed = 0;                    //image speed for animating the player sprite
+scr_get_input();                    //get and set keyboard inputs
+state = scr_move_state;             //set player state to move_state
 </string>
           </argument>
         </arguments>

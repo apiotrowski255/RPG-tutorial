@@ -40,6 +40,7 @@
       <script>scripts\scr_enemy_wander_state.gml</script>
       <script>scripts\scr_enemy_chase_state.gml</script>
       <script>scripts\scr_enemy_idle_state.gml</script>
+      <script>scripts\scr_enemy_stall_state.gml</script>
       <scripts name="enemy helper scripts">
         <script>scripts\scr_enemy_choose_next_state.gml</script>
         <script>scripts\scr_check_for_player.gml</script>

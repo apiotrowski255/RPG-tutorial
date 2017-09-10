@@ -672,7 +672,8 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="4">
+    <constants number="5">
+      <constant name="DASH_COST">5</constant>
       <constant name="DOWN">3</constant>
       <constant name="LEFT">2</constant>
       <constant name="UP">1</constant>

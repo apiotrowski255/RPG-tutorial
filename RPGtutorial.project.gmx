@@ -27,11 +27,24 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_get_input.gml</script>
-    <script>scripts\scr_move_state.gml</script>
-    <script>scripts\scr_dash_state.gml</script>
-    <script>scripts\scr_attack_state.gml</script>
-    <script>scripts\scr_get_face.gml</script>
+    <scripts name="player_states">
+      <script>scripts\scr_move_state.gml</script>
+      <script>scripts\scr_attack_state.gml</script>
+      <script>scripts\scr_dash_state.gml</script>
+    </scripts>
+    <scripts name="helper scripts">
+      <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_get_face.gml</script>
+    </scripts>
+    <scripts name="enemy states">
+      <script>scripts\scr_enemy_wander_state.gml</script>
+      <script>scripts\scr_enemy_chase_state.gml</script>
+      <script>scripts\scr_enemy_idle_state.gml</script>
+      <scripts name="enemy helper scripts">
+        <script>scripts\scr_enemy_choose_next_state.gml</script>
+        <script>scripts\scr_check_for_player.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_lifeform_parent</object>

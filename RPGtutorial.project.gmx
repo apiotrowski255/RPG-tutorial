@@ -24,6 +24,8 @@
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_expr</sprite>
     <sprite>sprites\spr_health_pack</sprite>
+    <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_dialog_box</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -63,6 +65,9 @@
     <object>objects\obj_expr</object>
     <object>objects\obj_health_pack</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_speaker</object>
+    <object>objects\obj_dialog</object>
+    <object>objects\obj_sign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>

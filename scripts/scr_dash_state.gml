@@ -1,4 +1,7 @@
 ///scr_dash_state
+if (len == 0){ 
+    dir = face * 90;
+}
 len = spd * 4;
 
 //The the hspd and vspd

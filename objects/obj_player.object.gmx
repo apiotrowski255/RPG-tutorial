@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///set fixed rotation
 event_inherited();
+hp = 3;
 spd = 2;                            //speed of the player 
 hspd = 0;                           //horizontal speed
 vspd = 0;                           //vertical speed
@@ -86,7 +87,14 @@ state = scr_move_state;
           <argument>
             <kind>1</kind>
             <string>///move the player in the step event
-event_inherited();
+depth = -y;
+
+//check for death
+if(obj_player_stats.hp &lt;= 0){
+    instance_destroy();
+}
+
+//execute the state of the player
 script_execute(state);
 </string>
           </argument>

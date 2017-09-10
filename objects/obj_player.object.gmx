@@ -34,6 +34,7 @@ len = 0;                            //length
 x_axis = 0;
 y_axis = 0;
 dir = 0;
+attacked = false;                  
 image_speed = 0;                    //image speed for animating the player sprite
 scr_get_input();                    //get and set keyboard inputs
 state = scr_move_state;             //set player state to move_state
@@ -111,6 +112,7 @@ script_execute(state);
             <string>///animation end clean up, changes from attack state to move state
 if (state == scr_attack_state){
     state = scr_move_state;
+    attacked = false;
 }
 </string>
           </argument>
@@ -149,7 +151,7 @@ draw_self();
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
+  <PhysicsObjectLinearDamping>5</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>

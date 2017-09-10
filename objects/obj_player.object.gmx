@@ -38,6 +38,7 @@ attacked = false;
 image_speed = 0;                    //image speed for animating the player sprite
 scr_get_input();                    //get and set keyboard inputs
 state = scr_move_state;             //set player state to move_state
+face = RIGHT;
 </string>
           </argument>
         </arguments>

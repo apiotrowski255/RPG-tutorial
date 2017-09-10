@@ -39,6 +39,7 @@ if(image_index >= 3 and attacked == false){
 }
     var damageObj = instance_create(xtemp, ytemp, obj_damage);
     damageObj.creator = id;
+    damageObj.amount = obj_player_stats.attack;
     attacked = true;
 }
 

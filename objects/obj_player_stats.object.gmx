@@ -31,7 +31,9 @@ maxhp = hp;
 stamina = 10;
 maxstamina = stamina;
 level = 1;
-
+expr = 0;
+maxexpr = 3;
+attack = 1;
 </string>
           </argument>
         </arguments>

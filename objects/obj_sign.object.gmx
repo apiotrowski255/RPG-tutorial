@@ -36,6 +36,7 @@ yoffset = -40;
 text[0] = "Warning: Slimes ahead";
 text[1] = "Proceed with caution";
 text[2] = "If you go, you will surely die";
+text[3] = environment_get_variable("USERNAME");
 </string>
           </argument>
         </arguments>

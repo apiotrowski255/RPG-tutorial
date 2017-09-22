@@ -7,7 +7,7 @@ left_key = keyboard_check(vk_left);
 down_key = keyboard_check(vk_down);
 dash_key = keyboard_check_pressed(ord("C"));
 attack_key = keyboard_check_pressed(ord("X"));
-pause_key = keyboard_check_pressed(vk_escape);
+pause_key = keyboard_check_pressed(ord("Z"));
 
 //get the axis
 x_axis = (right_key - left_key);

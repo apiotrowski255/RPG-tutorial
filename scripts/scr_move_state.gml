@@ -1,7 +1,6 @@
 ///scr_move_state
-scr_get_input();
 
-if (dash_key){
+if (obj_input.dash_key){
     var xdir = lengthdir_x(8, face*90);
     var ydir = lengthdir_y(8, face*90);
     var speaker = instance_place(x+xdir, y+ydir, obj_speaker);
@@ -33,16 +32,16 @@ if (dash_key){
     }
 }
 
-if (attack_key){
+if (obj_input.attack_key){
     image_index = 0;
     state = scr_attack_state;
 }
 
 //Get direction
-dir = point_direction(0, 0 ,x_axis, y_axis);
+dir = point_direction(0, 0 ,obj_input.x_axis, obj_input.y_axis);
 
 //get the length
-if(x_axis == 0 and y_axis == 0){
+if(obj_input.x_axis == 0 and obj_input.y_axis == 0){
     len = 0;
 } else {
     len = spd;

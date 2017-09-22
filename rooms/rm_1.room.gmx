@@ -7,7 +7,7 @@
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -61,8 +61,6 @@
     <instance objName="obj_player" x="288" y="160" name="inst_A9B2146D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="288" y="160" name="inst_FCB2E7FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_slime" x="64" y="128" name="inst_155C1A3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_slime" x="256" y="256" name="inst_6B676C18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_slime" x="480" y="96" name="inst_E46A563A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_stats" x="32" y="32" name="inst_FB11C8DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_slime" x="96" y="96" name="inst_48714660" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_slime" x="96" y="224" name="inst_02AFE5F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,6 +70,7 @@
     <instance objName="obj_enemy_slime" x="544" y="96" name="inst_544EC13C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="544" y="320" name="inst_76D33B4D" locked="0" code="///connect the rooms&#xA;new_room = rm_2;&#xA;new_x = 64;&#xA;new_y = 36;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="320" y="192" name="inst_2AD4B2AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_input" x="64" y="32" name="inst_C302A668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

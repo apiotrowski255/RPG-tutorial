@@ -247,6 +247,7 @@ if (state == scr_attack_state){
             <kind>1</kind>
             <string>///set the fixed rotation every time we enter a new room
 phy_fixed_rotation = true;
+persistent = true;
 </string>
           </argument>
         </arguments>

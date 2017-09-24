@@ -12,8 +12,8 @@ var saved_data = ds_map_create();
 
 with(obj_player_stats){
     saved_data[? "room"] = previous_room;
-    saved_data[? "x"] = 0;
-    saved_data[? "y"] = 0;
+    saved_data[? "x"] = player_xstart;
+    saved_data[? "y"] = player_ystart;
     saved_data[? "hp"] = hp;
     saved_data[? "maxhp"] = maxhp;
     saved_data[? "stamina"] = stamina;

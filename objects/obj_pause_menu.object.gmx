@@ -103,6 +103,7 @@ if(alarm[0] &lt;= 0){
     if(obj_input.dash_key){
         switch(menu_index){
             case 0:
+                obj_player_stats.room_start_action = RETURN;
                 room_goto(obj_player_stats.previous_room);
                 break;
             case 1:

@@ -37,6 +37,17 @@ if (obj_input.attack_key){
     state = scr_attack_state;
 }
 
+if (obj_input.spell_key){
+    //create the projectile
+    var p = instance_create(x,y,obj_projectile);
+    var xforce = lengthdir_x(20, face * 90);
+    var yforce = lengthdir_y(20, face * 90);
+    p.creator = id;
+    with(p){
+        physics_apply_impulse(x, y, xforce, yforce);
+    }
+}
+
 //Get direction
 dir = point_direction(0, 0 ,obj_input.x_axis, obj_input.y_axis);
 

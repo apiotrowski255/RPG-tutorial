@@ -1,5 +1,5 @@
 ///scr_move_state
-
+movement = MOVE;
 if (obj_input.dash_key){
     var xdir = lengthdir_x(8, face*90);
     var ydir = lengthdir_y(8, face*90);
@@ -56,7 +56,7 @@ if(obj_input.x_axis == 0 and obj_input.y_axis == 0){
     len = 0;
 } else {
     len = spd;
-    scr_get_face()
+    scr_get_face(dir);
 }
 
 //The the hspd and vspd
@@ -71,20 +71,4 @@ phy_position_y += vspd;
 image_speed = 0.2;
 if(len == 0){
     image_index = 0;
-}
-
-
-switch(face){
-    case RIGHT:
-        sprite_index = spr_player_right;
-        break;
-    case UP:
-        sprite_index = spr_player_up;
-        break;
-    case LEFT:
-        sprite_index = spr_player_left;
-        break;
-    case DOWN:
-        sprite_index = spr_player_down;
-        break;
 }

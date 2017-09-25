@@ -1,38 +1,25 @@
 ///scr_attack_state()
 image_speed = 0.5;
-switch(sprite_index){
-    case spr_player_down:
-        sprite_index = spr_player_attack_down;
-        break;
-    case spr_player_up:
-        sprite_index = spr_player_attack_up;
-        break;
-    case spr_player_right:
-        sprite_index = spr_player_attack_right;
-        break;
-    case spr_player_left:
-        sprite_index = spr_player_attack_left;
-        break;
-}
+movement = ATTACK;
 
 if(image_index >= 3 and attacked == false){
     var xtemp;
     var ytemp;
 
-    switch(sprite_index){
-        case spr_player_attack_down:
+    switch(face){
+        case DOWN:
             xtemp = x;
             ytemp = y + 12;
             break;
-        case spr_player_attack_up:
+        case UP:
             xtemp = x;
             ytemp = y - 10;
             break;
-        case spr_player_attack_right:
+        case RIGHT:
             xtemp = x + 10;
             ytemp = y + 2;
             break;
-        case spr_player_attack_left:
+        case LEFT:
             xtemp = x - 10;
             ytemp = y + 2;
             break;

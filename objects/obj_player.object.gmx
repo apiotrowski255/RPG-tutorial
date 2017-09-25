@@ -37,9 +37,20 @@ y_axis = 0;
 dir = 0;
 attacked = false;                  
 image_speed = 0;                    //image speed for animating the player sprite
-
 state = scr_move_state;             //set player state to move_state
 face = RIGHT;
+movement = MOVE;
+
+//create the sprite array
+sprite[RIGHT, MOVE] = spr_player_right;
+sprite[UP, MOVE] = spr_player_up;
+sprite[LEFT, MOVE] = spr_player_left;
+sprite[DOWN, MOVE] = spr_player_down;
+
+sprite[RIGHT, ATTACK] = spr_player_attack_right;
+sprite[UP, ATTACK] = spr_player_attack_up;
+sprite[LEFT, ATTACK] = spr_player_attack_left;
+sprite[DOWN, ATTACK] = spr_player_attack_down;
 </string>
           </argument>
         </arguments>
@@ -88,14 +99,17 @@ state = scr_move_state;
             <kind>1</kind>
             <string>///move the player in the step event
 depth = -y;
+//execute the state of the player
+script_execute(state);
+
+sprite_index = sprite[face, movement];
 
 //check for death
 if(obj_player_stats.hp &lt;= 0){
     instance_destroy();
 }
 
-//execute the state of the player
-script_execute(state);
+
 </string>
           </argument>
         </arguments>

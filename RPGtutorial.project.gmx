@@ -26,6 +26,12 @@
     <sprite>sprites\spr_health_pack</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_dialog_box</sprite>
+    <sprite>sprites\spr_chinlin_run_down</sprite>
+    <sprite>sprites\spr_chinlin_run_right</sprite>
+    <sprite>sprites\spr_chinlin_run_up</sprite>
+    <sprite>sprites\spr_chinlin_stand_down</sprite>
+    <sprite>sprites\spr_chinlin_stand_right</sprite>
+    <sprite>sprites\spr_chinlin_stand_up</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -48,6 +54,7 @@
       <script>scripts\scr_enemy_idle_state.gml</script>
       <script>scripts\scr_enemy_stall_state.gml</script>
       <scripts name="enemy helper scripts">
+        <script>scripts\scr_move_axis.gml</script>
         <script>scripts\scr_enemy_choose_next_state.gml</script>
         <script>scripts\scr_check_for_player.gml</script>
       </scripts>
@@ -63,6 +70,7 @@
     <object>objects\obj_view</object>
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_enemy_slime</object>
+    <object>objects\obj_enemy_chinlin</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_player_stats</object>
     <object>objects\obj_expr</object>

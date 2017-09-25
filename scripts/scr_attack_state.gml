@@ -2,7 +2,13 @@
 image_speed = 0.5;
 movement = ATTACK;
 
-if(image_index >= 3 and attacked == false){
+if(scr_animation_hit_frame(2)){
+    var attack_animation = instance_create(x, y, weapon);
+    attack_animation.dir = face * 90;
+    attack_animation.image_angle = (face * 90) + 45;
+}
+
+if(scr_animation_hit_frame(3)){
     var xtemp;
     var ytemp;
 

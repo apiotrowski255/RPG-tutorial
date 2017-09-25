@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///set fixed rotation
+if(instance_number(obj_player) &gt; 1){
+    instance_destroy();
+}
 event_inherited();
 hp = 3;
 spd = 2;                            //speed of the player 
@@ -34,12 +37,12 @@ vspd = 0;                           //vertical speed
 len = 0;                            //length
 x_axis = 0;
 y_axis = 0;
-dir = 0;
-attacked = false;                  
+dir = 0;                  
 image_speed = 0;                    //image speed for animating the player sprite
 state = scr_move_state;             //set player state to move_state
 face = RIGHT;
 movement = MOVE;
+weapon = obj_sword;
 
 //create the sprite array
 sprite[RIGHT, MOVE] = spr_player_right;

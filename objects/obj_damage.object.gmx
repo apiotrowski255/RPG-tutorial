@@ -79,6 +79,7 @@ instance_destroy();
             <string>///when collide with player, reduce the hitpoints
 if(other.id != creator){
     obj_player_stats.hp -= amount;
+    audio_play_sound(snd_player_takes_damage, 0, false);
     
     if(instance_exists(creator)){
         var dir = point_direction(creator.x, creator.y, other.x, other.y);

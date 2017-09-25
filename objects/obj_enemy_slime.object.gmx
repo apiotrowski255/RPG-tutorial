@@ -58,6 +58,7 @@ yaxis = 0;
             <kind>1</kind>
             <string>///Drop the experience for the player
 instance_create(x, y, obj_expr);
+audio_play_sound(snd_enemy_die, 5, false);
 
 if(scr_chance(0.5)){
     instance_create(x+random_range(-5,5), y+random_range(-5,5), obj_health_pack);

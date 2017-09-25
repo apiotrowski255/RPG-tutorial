@@ -163,6 +163,7 @@ if (room_exists(other.new_room)){
             <string>///collect the health pack
 with(other){
     instance_destroy();
+    audio_play_sound(snd_expr, 6, false);
 }
 
 //Level up code
@@ -194,6 +195,7 @@ with(obj_player_stats){
             <string>///collide with the experience
 with(other){
     instance_destroy();
+    audio_play_sound(snd_expr, 6, false);
 }
 
 //Level up code

@@ -77,7 +77,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///when collide with player, reduce the hitpoints
-if(other.id != creator){
+if(other.id != creator &amp;&amp; obj_player.state != scr_dash_state){
     obj_player_stats.hp -= amount;
     audio_play_sound(snd_player_takes_damage, 0, false);
     

@@ -34,6 +34,7 @@ alarm[0] = room_speed*irandom_range(2, 5)
 sight = 64;
 xaxis = 0;
 yaxis = 0;
+respawn = true;
 </string>
           </argument>
         </arguments>
@@ -62,6 +63,15 @@ audio_play_sound(snd_enemy_die, 5, false);
 
 if(scr_chance(0.5)){
     instance_create(x+random_range(-5,5), y+random_range(-5,5), obj_health_pack);
+}
+
+if(respawn == true){
+    var e1 = instance_create(x+random_range(-5,0), y+random_range(0,5), obj_enemy_slime);
+    var e2 = instance_create(x+random_range(0,5), y+random_range(-5,0), obj_enemy_slime);
+    e1.respawn = false;
+    e2.respawn = false;
+    e1.hp += 2;
+    e2.hp += 2;
 }
 </string>
           </argument>

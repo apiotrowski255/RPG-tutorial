@@ -32,8 +32,10 @@ if (obj_input.dash_key){
     }
 }
 
-if (obj_input.attack_key){
+if (obj_input.attack_key && obj_player_stats.stamina >= ATTACK_COST){
     image_index = 0;
+    obj_player_stats.stamina -= ATTACK_COST;
+    obj_player_stats.alarm[0] = room_speed;
     state = scr_attack_state;
 }
 

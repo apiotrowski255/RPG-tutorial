@@ -70,8 +70,6 @@ if(respawn == true){
     var e2 = instance_create(x+random_range(0,5), y+random_range(-5,0), obj_enemy_slime);
     e1.respawn = false;
     e2.respawn = false;
-    e1.hp += 2;
-    e2.hp += 2;
 }
 </string>
           </argument>

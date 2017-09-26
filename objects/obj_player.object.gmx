@@ -42,7 +42,7 @@ image_speed = 0;                    //image speed for animating the player sprit
 state = scr_move_state;             //set player state to move_state
 face = RIGHT;
 movement = MOVE;
-weapon = obj_sword;
+weapon_sprite = spr_sword;
 
 //create the sprite array
 sprite[RIGHT, MOVE] = spr_player_right;

@@ -82,7 +82,7 @@ menu_index = 0;
             <kind>1</kind>
             <string>///control the menu
 if(alarm[0] &lt;= 0){
-    if(obj_input.down_key){
+    if(obj_input.down_key || obj_input.y_axis &gt; .5){
         if(menu_index &lt; array_length_1d(option) - 1){
             menu_index++;
         } else {
@@ -91,7 +91,7 @@ if(alarm[0] &lt;= 0){
         alarm[0] = room_speed/6;
     }
     
-    if(obj_input.up_key){
+    if(obj_input.up_key || obj_input.y_axis &lt; -.5){
         if(menu_index &gt; 0){
             menu_index--;    
         } else {

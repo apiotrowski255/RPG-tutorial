@@ -3,9 +3,10 @@ image_speed = 0.5;
 movement = ATTACK;
 
 if(scr_animation_hit_frame(2)){
-    var attack_animation = instance_create(x, y, weapon);
+    var attack_animation = instance_create(x, y, obj_weapon_animation);
     attack_animation.dir = face * 90;
     attack_animation.image_angle = (face * 90) + 45;
+    attack_animation.sprite_index = weapon_sprite;
 }
 
 if(scr_animation_hit_frame(3)){

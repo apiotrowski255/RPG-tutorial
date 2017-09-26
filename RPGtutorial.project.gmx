@@ -9,6 +9,7 @@
     <sound>sound\snd_expr</sound>
     <sound>sound\snd_player_takes_damage</sound>
     <sound>sound\snd_sword_attack</sound>
+    <sound>sound\snd_Explosion4</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>

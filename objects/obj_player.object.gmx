@@ -30,7 +30,6 @@ if(instance_number(obj_player) &gt; 1){
     instance_destroy();
 }
 event_inherited();
-hp = 3;
 spd = 2;                            //speed of the player 
 hspd = 0;                           //horizontal speed
 vspd = 0;                           //vertical speed

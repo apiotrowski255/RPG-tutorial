@@ -75,6 +75,7 @@
     <instance objName="obj_enemy_chinlin" x="480" y="96" name="inst_2D53EB10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_chinlin" x="576" y="224" name="inst_E0051C72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_weapon_item" x="192" y="288" name="inst_A1556708" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trap" x="288" y="288" name="inst_9268BF90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

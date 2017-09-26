@@ -31,16 +31,19 @@
     <sprite>sprites\spr_health_pack</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_dialog_box</sprite>
-    <sprite>sprites\spr_chinlin_run_down</sprite>
-    <sprite>sprites\spr_chinlin_run_right</sprite>
-    <sprite>sprites\spr_chinlin_run_up</sprite>
-    <sprite>sprites\spr_chinlin_stand_down</sprite>
-    <sprite>sprites\spr_chinlin_stand_right</sprite>
-    <sprite>sprites\spr_chinlin_stand_up</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_axe</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprites name="chinlin">
+      <sprite>sprites\spr_chinlin_stand_up</sprite>
+      <sprite>sprites\spr_chinlin_run_down</sprite>
+      <sprite>sprites\spr_chinlin_stand_down</sprite>
+      <sprite>sprites\spr_chinlin_run_right</sprite>
+      <sprite>sprites\spr_chinlin_stand_right</sprite>
+      <sprite>sprites\spr_chinlin_run_up</sprite>
+    </sprites>
+    <sprite>sprites\spr_explosion2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -96,6 +99,7 @@
     <object>objects\obj_weapon_animation</object>
     <object>objects\obj_weapon_item</object>
     <object>objects\obj_explosion</object>
+    <object>objects\obj_trap</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>
